@@ -1,0 +1,66 @@
+
+# Configuración de usuario
+git config --global user.name 'VictoriaVMC'
+git config --global user.email 'mimailde@GitHub.com'
+####
+cd para cambiar directorio
+ls para ver los archivos en donde estoy.
+####
+# Ubico mi archivo a subir (la carpeta donde se encuentra):
+cd 'OneDrive/Documentos/Uni/Estudio/Repositorios/Finalizado/Apunte (Explicacion) de Git'
+####
+# Creación de un repositorio Git:
+git init
+####
+# Verificación del estado de los archivos
+git status
+####
+# Añadir archivos al área de preparación (los archivos a subir o especifico)
+ // Todos los que estan en la carpeta
+git add .
+
+ // Si es en especifico:
+git add "Ejemplo.txt"
+####
+# Crear un commit (si o si luego de anadir al area de preparacion se agrega un comentario)
+git commit -m "Agregar archivo de texto"
+####
+# Subir el archivo:
+ * Asegurarse de que el repositorio en GitHub ya esté creado.
+
+# Configurar la conexión remota con git que te da automatico github:
+git remote add origin 'https://github.com/victoriavmc/Git-SOLO-COMANDOS.git'
+
+# Subir los cambios al repositorio remoto:(main o el nombre de la rama principal)
+git push -u origin main
+
+########## OPCIONAL ##########
+# Ver el historial de commits:
+git log
+
+# Modificar un Commit en Específico:
+# Eliminar un Commit en Especifico:
+
+# Deshacer el último commit (sin eliminar cambios locales):
+git reset --soft HEAD~1
+
+# Gestión de ramas:
+# Crear una nueva rama
+git branch nombre_de_rama          
+
+# Ver todas las ramas
+git branch                        
+
+# Cambiar a una rama
+git checkout nombre_de_rama       
+
+# Crear y cambiar a una nueva rama
+git checkout -b nombre_de_rama    
+
+# Cambiar el nombre de una rama
+git branch -m nuevo_nombre        
+
+# Eliminar una rama local
+git branch -d nombre_de_rama      
+
+
